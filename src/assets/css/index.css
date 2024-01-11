@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-primary {
+  background-color: #21272f;
+}
+
+.bg-secondary {
+  background-color: #171c23;
+}
+
+.bg-teal {
+  background-color: #00bd95;
+}
+
+.border-teal {
+  border-color: #00bd95;
+}
+
+.bg-teal-1 {
+  background-color: #165750;
+}
+
+.btn-teal {
+  background-color: #00bd95;
+}
+
+.nav {
+  transition: 0.5s;
+}
+
+.nav a {
+  border-bottom: #21272f solid;
+}
+
+.nav a:hover {
+  border-bottom: #00bd95 solid;
+}
+
+.nav .active {
+  color: #00bd95;
+}
+
+.scroll-top.active {
+  display: none;
+}
+
+.text-teal {
+  color: #00bd95;
+}
+
+.hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: 0.5s;
+}
+
+.profil {
+  width: 25rem;
+  height: 27rem;
+  background: linear-gradient(#00bd95, #165750);
+}
+
+.icon * {
+  fill: #00bd95;
+}
+
+.swiper-slide {
+  width: 20rem;
+}
+
+button:not(:disabled) {
+  transition: 0.5s;
+  background: linear-gradient(90deg, #00bd95, #165750);
+}
+
+button:disabled {
+  background-color: #165750;
+}
+
+.lets-talk {
+  background: linear-gradient(90deg, #17cd8a, #00bd95);
+  box-shadow: 0 0 5px #00bd95, 0 0 25px #00bd95, 0 0 50px #17cd8a,
+    0 0 100px #17cd8a;
+}
+
+/* filter: drop-shadow(0 0 2em #646cffaa); */
