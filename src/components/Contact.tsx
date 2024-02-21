@@ -74,7 +74,7 @@ const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
             <input
               type="text"
               placeholder="name"
-              className="w-full p-3 rounded text-black"
+              className="input bg-white w-full p-3 rounded text-black"
               {...register("name", { required: "* This field is required" })}
             />
             {errors.name && (
@@ -87,7 +87,7 @@ const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
             <input
               type="email"
               placeholder="email"
-              className="w-full p-3 rounded text-black"
+              className="input bg-white w-full p-3 rounded text-black"
               {...register("email", { required: "* This field is required" })}
             />
             {errors.email && (
@@ -101,7 +101,7 @@ const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
               placeholder="message"
               cols={30}
               rows={10}
-              className="w-full p-3 rounded text-black"
+              className="textarea bg-white w-full p-3 rounded text-black"
               {...register("message", { required: "* This field is required" })}
             ></textarea>
             {errors.message && (
@@ -110,7 +110,7 @@ const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
               </span>
             )}
           </div>
-          <button type="submit" className="py-3 rounded hover:disabled:opacity-100 hover:opacity-80" disabled={isSending}>
+          <button type="submit" className="btn rounded hover:disabled:opacity-100 hover:opacity-80" disabled={isSending}>
             <FontAwesomeIcon icon={isSending?faSpinner:faPaperPlane} className={`mr-2 ${isSending?`animate-spin`:``}`}/>
             Submit
           </button>

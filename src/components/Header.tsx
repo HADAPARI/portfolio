@@ -5,7 +5,7 @@ import dr from "../assets/img/dr.png"
 
 const Header = () => {
   return (
-    <div id='home' className="px-4 sm:px-14 xl:px-40 py-14 bg-primary text-white pt-48 flex">
+    <section id='home' className="px-4 sm:px-14 xl:px-40 py-14 bg-primary text-white pt-48 flex">
         <div className="lg:size-1/2 flex flex-col gap-3">
             <p className="text-2xl"> Hello, <span className="text-teal">I'm</span> </p>
             <p className="text-3xl text-teal font-bold"> David Richard</p>
@@ -15,18 +15,16 @@ const Header = () => {
             <div className='flex gap-3 items-center'>
                 <span>Check out my</span>
                 <span className='text-xl flex gap-3 relative'>
-                    <a href='https://web.facebook.com/profile.php?id=100003537838780' target="_blank" className='hexagon transition-all hover:-translate-y-3 hover:opacity-80 bg-teal-1 flex justify-center items-center w-12 h-14'><FontAwesomeIcon icon={faFacebookF} /></a>
-                    <a href='#' className='hexagon hover:-translate-y-3 hover:opacity-80 bg-teal-1 flex justify-center items-center w-12 h-14'><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                    <a href='#' className='hexagon hover:-translate-y-3 hover:opacity-80 bg-teal-1 flex justify-center items-center w-12 h-14'><FontAwesomeIcon icon={faGithub} /></a>
+                    <a href='https://web.facebook.com/profile.php?id=100003537838780' target="_blank" className='mask mask-hexagon hexagon transition-all hover:-translate-y-3 hover:opacity-80 bg-teal-1 flex justify-center items-center w-12 h-14'><FontAwesomeIcon icon={faFacebookF} /></a>
+                    <a href='https://www.linkedin.com/in/david-richard-6653a32b0' target="_blank" className='mask mask-hexagon hexagon hover:-translate-y-3 hover:opacity-80 bg-teal-1 flex justify-center items-center w-12 h-14'><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                    <a href='https://github.com/HADAPARI' target="_blank" className='mask mask-hexagon hexagon hover:-translate-y-3 hover:opacity-80 bg-teal-1 flex justify-center items-center w-12 h-14'><FontAwesomeIcon icon={faGithub} /></a>
                 </span>
             </div>
         </div>
-        <div className='hidden size-1/2 lg:flex justify-end '>
-            <div className='hexagon profil'>
-                <img src={dr} alt="" className="pt-8 opacity-90 w-full scale-125" />
-            </div>
+        <div className='hidden size-1/2 lg:flex justify-end'>
+                <img src={dr} alt="" className="mask mask-hexagon opacity-90 w-96 bg-teal" />
         </div>
-    </div>
+    </section>
   )
 }
 

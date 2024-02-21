@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="px-4 sm:px-14 xl:px-40 w-full py-7 flex flex-col lg:flex-row  justify-between lg:items-center bg-primary text-white fixed z-50 top-0 opacity-80">
+    <header className="px-4 sm:px-14 xl:px-40 w-full py-7 flex flex-col lg:flex-row  justify-between lg:items-center bg-primary text-white fixed z-50 top-0 opacity-80">
       <div className="flex justify-between items-center">
         <a href="/" className="text-2xl font-bold flex items-center">
           <img src={portfolio} alt="" className="w-10 mr-5" />
@@ -70,7 +70,7 @@ const NavBar = () => {
           Contact
         </Link>
       </nav>
-    </div>
+    </header>
   );
 };
 
