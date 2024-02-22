@@ -57,7 +57,7 @@ const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
   });
 
   return (
-    <div id="contact" className="px-4 sm:px-14 xl:px-40 py-14 bg-secondary text-white flex flex-col lg:flex-row">
+    <section id="contact" className="px-4 sm:px-14 xl:px-40 py-14 bg-secondary text-white flex flex-col lg:flex-row">
       <div className="lg:size-1/2 flex flex-col gap-7">
         <p className="text-2xl">
           Let' s make something amazing <br />
@@ -65,13 +65,14 @@ const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
         </p>
         <p className="text-2xl mb-16">
           Start by{" "}
-          <span className="text-teal border-b-2 border-teal">saying hi</span>
+          <label className="text-teal border-b-2 border-teal cursor-pointer" htmlFor="name">saying hi</label>
         </p>
       </div>
       <div className="lg:size-1/2">
         <form className="flex flex-col gap-5" onSubmit={onSubmit}>
           <div>
             <input
+              id="name"
               type="text"
               placeholder="name"
               className="input bg-white w-full p-3 rounded text-black"
@@ -117,7 +118,7 @@ const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
           <ToastContainer />
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

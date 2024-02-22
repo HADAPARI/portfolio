@@ -20,7 +20,7 @@ const Skills = () => {
   const nodejs = <FontAwesomeIcon icon={faNodeJs} />;
 
   return (
-    <div id="skills" className="px-4 sm:px-14 xl:px-40 py-14 bg-secondary text-white">
+    <section id="skills" className="px-4 sm:px-14 xl:px-40 py-14 bg-secondary text-white">
       <div className="text-2xl mb-5">
         My <span className="text-teal">Skills</span>
       </div>
@@ -49,7 +49,7 @@ const Skills = () => {
           description="Node.js® is an open-source, cross-platform JavaScript runtime environment"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
