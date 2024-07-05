@@ -112,12 +112,12 @@ const Footer = () => {
             (261) 34 42 127 77
           </p>
           <a
-            href="mailto:davs.richard1@gmail.com"
+            href="mailto:david.richard@informatika-group.com"
             target="_blank"
             className="link-hover"
           >
             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-            davs.richard1@gmail.com
+            david.richard@informatika-group.com
           </a>
         </div>
         <div className="flex flex-col gap-3">

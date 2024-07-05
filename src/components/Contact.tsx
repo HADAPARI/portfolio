@@ -75,7 +75,7 @@ const Contact = () => {
             smooth={true}
             offset={-90}
             duration={500}
-            onClick={() => inputNameRef?.current?.focus()}
+            // onClick={() => inputNameRef?.current?.focus()}
           >
             {/* <label
               className="text-teal border-b-2 border-teal cursor-pointer"
