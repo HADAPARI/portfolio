@@ -1,2 +1,3 @@
 User-agent: *
+Allow: /
 Sitemap: https://hadapari.netlify.app/sitemap.xml
